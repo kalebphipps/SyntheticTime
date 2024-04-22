@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["synthetictime"]
+
+[project]
+name = "synthetictime"
+version = "0.1"
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "jupyter",
+]
+
+[project.optional-dependencies]
+dev = ["black",]
